@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import styles from "./Destination.module.css";
-import { useSearchParams } from "next/navigation";
 import { fetchRandomDestination } from "@/services/destinationService";
 import Questions from "@/components/questions/Questions";
 import ShareGame from "../share-game/ShareGame";
@@ -20,7 +19,8 @@ const Destinations = () => {
   const [inviter, setInviter] = useState(null);
   const [inviterScore, setInviterScore] = useState(null);
   const [inviterAttempts, setInviterAttempts] = useState(null);
-  const searchParams = useSearchParams();
+  //   setSearchParams(new URLSearchParams(window.location.search));
+  // }, []);
 
   useEffect(() => {
     getDestination();
@@ -42,19 +42,6 @@ const Destinations = () => {
       setInviterAttempts(userTotalAttempts);
     }
   }, []);
-
-  useEffect(() => {
-    const user = searchParams.get("user");
-    const score = searchParams.get("score");
-    const totalAttempts = searchParams.get("totalAttempts");
-
-    if (user && score && totalAttempts) {
-      setInviter(user);
-      setInviterScore(score);
-      setInviterAttempts(totalAttempts);
-    }
-  }, [searchParams]);
-
 
   // To Get Question and it's Options
   async function getDestination() {
