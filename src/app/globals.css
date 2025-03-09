@@ -3,6 +3,13 @@
   --foreground: #171717;
 }
 
+/* .mainHead{
+  padding: 0.2rem 0;
+  text-align: center;
+  background-color: darkgray;
+ 
+} */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
