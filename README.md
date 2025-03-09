@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Globetrotter - The Ultimate Travel Guessing Game
 
-## Getting Started
+## 🧩 About the Project
+Globetrotter is a fun and interactive web app where users get cryptic clues about famous destinations and must guess the correct location. Upon answering, they unlock fun facts, trivia, and surprises about the place. The game includes a scoring system, animations, and a "Challenge a Friend" feature for competitive play.
 
-First, run the development server:
+## 🔹 Features
+- **Destination Guessing Game**: Get random clues and choose from multiple options.
+- **Immediate Feedback**:
+  - 🎉 Correct Answer: Confetti animation + fun fact reveal.
+  - 😢 Incorrect Answer: Sad-face animation + fun fact reveal.
+- **Play Again**: Load a new random destination.
+- **Score Tracking**: Keeps count of correct and incorrect answers.
+- **Challenge a Friend**:
+  - Invite friends with a dynamic shareable link.
+  - Invitees can see the inviter’s score before playing.
+  - Fully functional gameplay for invited users.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
+- **Frontend**: Next.js, React, CSS Modules
+- **Backend**: Firebase Firestore (for storing destinations)
+- **Storage**: Session Storage (for user score tracking)
+- **Deployment**: Hosted on [Vercel](#deployment-link)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Setup & Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/globetrotter.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd globetrotter
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🌍 Deployment
+The live version of the project is hosted on Vercel:
+🔗 [Live Demo](https://globetrotter-rho.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔗 [Live Demo](https://globetrotter-ayush-goels-projects-1a398090.vercel.app/)
 
-## Learn More
+## 📽️ Loom Walkthrough
+Watch a short demo explaining the project and its features:
+🎥 [Loom Walkthrough]([#loom-link](https://www.loom.com/share/80f65ebe65c44a3db94c4ba9ed92a6ba?sid=b416c456-8621-472f-b8bc-38a0c366da8d))
 
-To learn more about Next.js, take a look at the following resources:
+## 📤 Submission Details
+- **GitHub Repo**: Publicly available.
+- **Hosted Web Link**: Deployed on Vercel.
+- **Loom Video**: Overview of the project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Feel free to modify this README to include actual deployment and Loom links! 🚀
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
