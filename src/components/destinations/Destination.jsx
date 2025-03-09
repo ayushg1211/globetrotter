@@ -25,8 +25,8 @@ const Destinations = () => {
   useEffect(() => {
     getDestination();
 
-    const savedScore = Number(localStorage.getItem("score")) || 0;
-    const savedTotalAttempts = Number(localStorage.getItem("totalAttempts")) || 0;
+    const savedScore = Number(sessionStorage.getItem("score")) || 0;
+    const savedTotalAttempts = Number(sessionStorage.getItem("totalAttempts")) || 0;
   
     setScore(savedScore);
     setTotalAttempts(savedTotalAttempts);
@@ -68,14 +68,14 @@ const Destinations = () => {
       target.classList.add(styles.right);
       const newScore = score + 1;
       setScore(newScore);
-      localStorage.setItem("score", newScore);
+      sessionStorage.setItem("score", newScore);
     } else {
       target.classList.add(styles.wrong);
     }
 
     const newTotalAttempts = totalAttempts + 1;
     setTotalAttempts(newTotalAttempts);
-    localStorage.setItem("totalAttempts", newTotalAttempts);
+    sessionStorage.setItem("totalAttempts", newTotalAttempts);
   };
 
   // Play Again
@@ -95,8 +95,8 @@ const Destinations = () => {
   const resetScore = () => {
     setScore(0);
     setTotalAttempts(0);
-    localStorage.removeItem("score");
-    localStorage.removeItem("totalAttempts");
+    sessionStorage.removeItem("score");
+    sessionStorage.removeItem("totalAttempts");
   };
 
 
