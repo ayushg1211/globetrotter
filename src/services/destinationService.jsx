@@ -17,7 +17,7 @@ export const fetchRandomDestination = async () => {
 
         // setDestination(randomDestination);  ///////////
         
-        // Create answer choices (shuffle to avoid obvious answer)
+        // Create answer choices (shuffling to avoid obvious answer)
         const shuffledOptions = [...allDestinations]
           .sort(() => 0.5 - Math.random())
           .slice(0, 4); // Pick 3 random choices

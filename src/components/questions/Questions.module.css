@@ -33,6 +33,7 @@
     cursor: pointer;
     border-radius: 5px;
     transition: all 0.3s ease;
+    max-width: 200px;
     width: 200px;
     text-align: center;
   }
@@ -44,5 +45,28 @@
   .choice:disabled {
     background-color: #222;
     cursor: not-allowed;
+  }
+
+  @media screen and (max-width:450px) {
+    .container{
+      width: 100%;
+      padding: .2rem;
+    }
+
+    .questionText{
+      font-size: 1.0rem;
+    }
+
+    .optionsList {
+      width: 100%;
+      gap: 10px;
+    }
+    
+    .choice {
+      padding: 0.6rem .4rem;
+      max-width: 180px;
+      width: 100%;
+      text-align: center;
+    }
   }
   
