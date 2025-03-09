@@ -48,7 +48,7 @@ The live version of the project is hosted on Vercel:
 
 ## 📽️ Loom Walkthrough
 Watch a short demo explaining the project and its features:
-🎥 [Loom Walkthrough](#loom-link)
+🎥 [Loom Walkthrough]([#loom-link](https://www.loom.com/share/80f65ebe65c44a3db94c4ba9ed92a6ba?sid=b416c456-8621-472f-b8bc-38a0c366da8d))
 
 ## 📤 Submission Details
 - **GitHub Repo**: Publicly available.
